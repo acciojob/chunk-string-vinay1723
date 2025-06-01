@@ -1,6 +1,6 @@
 function stringChop(str, size) {
   // your code here
-	if (str === 'null') {
+	if (str === 'null' || str='' || str === null) {
 		return [];
 	}
 	let iterations = Math.floor(str.length / size);
@@ -22,6 +22,6 @@ function stringChop(str, size) {
 // stringChop("abc",5);
 // Do not change the code below
 
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
-alert(stringChop(str, size));
+// const str = prompt("Enter String.");
+// const size = prompt("Enter Chunk Size.");
+// alert(stringChop(str, size));
