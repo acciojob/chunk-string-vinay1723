@@ -1,6 +1,6 @@
 function stringChop(str, size) {
   // your code here
-	if (str === 'null' || str='' || str === null) {
+	if (str === 'null' && !str) {
 		return [];
 	}
 	let iterations = Math.floor(str.length / size);
